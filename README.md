@@ -11,6 +11,8 @@ The reason for creating this script is that I have always had trouble finding a 
 * Maya module ( scripts/icons/plug-ins directories etc. )
 
 ## Usage
+<p align="center"><img src="icons/moduleInstallerExample.gif?raw=true"></p>
+
 Drag and drop the mel file into Maya or run `source <MEL_FILE>;`.
 
 ## Maya Module Documentation
