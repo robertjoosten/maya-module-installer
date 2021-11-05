@@ -332,6 +332,8 @@ global proc installModule()
         print("Content:\n");
         for($line in $moduleContent){
             string $processedLine = `substitute "<PATH>" $line $path`;
+            if (endsWith($line, ".\r") || endsWith($line, "."))
+                $processedLine = `substring $line 1 (size($line) - 2)` + " " + $path + "\r";
             print("    " + $processedLine + "\n");
             fprint $fileId ($processedLine + "\n");  
         }
